@@ -1,0 +1,32 @@
+/*
+Author:
+  - Aasif Faizal (aasif@dal.ca)
+
+Styling for university details page rendered to the user.
+*/
+
+.university {
+  .profile-card {
+    max-width: 300px;
+    margin: 0 auto 30px auto;
+  }
+  .programs {
+    button{
+      font-size: 13px;
+      margin-left: 10px;
+    }
+    .btn-grp {
+      display: flex;
+      justify-content: center;
+    }
+    .program-body{
+      font-size: 14px;
+      .row{
+        margin: 0;
+      }
+      .col {
+        margin: 0;
+      }
+    }
+  }
+}

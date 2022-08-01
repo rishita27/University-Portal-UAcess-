@@ -1,0 +1,26 @@
+image: ruby:latest
+
+stages:
+  - deploy
+
+frontend_deploy:
+  stage: deploy
+  script:
+    - gem install dpl
+    - cd frontend
+    - dpl --provider=heroku --app=$FRONTEND_APP_NAME --api-key=$FRONTEND_API_KEY
+  only:
+    - main
+  tags:
+    - dalfcs_docker_kvm
+
+backend_deploy:
+  stage: deploy
+  script:
+    - gem install dpl
+    - cd backend
+    - dpl --provider=heroku --app=$BACKEND_APP_NAME --api-key=$BACKEND_API_KEY
+  only:
+    - main
+  tags:
+    - dalfcs_docker_kvm

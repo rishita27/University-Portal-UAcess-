@@ -1,0 +1,22 @@
+/*
+Author:
+  - Foram Gaikwad (foram.gaikwad@dal.ca)
+
+Styles for university navigation bar
+*/
+.university-nav .navbar .navbar-nav .nav-link:hover {
+  background-color: #777375!important;
+}
+
+.university-nav a{
+  color: #fff!important;
+}
+
+.university-nav .dropdown-item:hover{
+  background-color: #000;
+  color: #fff!important;
+}
+
+.university-nav .dropdown-item{
+  color: #000!important;
+}

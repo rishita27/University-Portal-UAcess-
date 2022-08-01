@@ -1,0 +1,265 @@
+/**
+@author [Rushit Jasoliya](rushit.jasoliya@dal.ca)
+*/
+
+.divRow {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh;
+}
+
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.column-right {
+  flex: 50%;
+  max-width: 50%;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.column-left {
+  flex: 50%;
+  max-width: 50%;
+  height: 100%;
+  background-color: #000;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.column-left img {
+  vertical-align: middle;
+  width: 100%;
+  background-color: #000;
+}
+
+.heading {
+  font-size: xx-large;
+  font-weight: 700;
+  color: #000;
+  margin-top: 5%;
+  margin-left: 7%;
+}
+
+.heading-2 {
+  font-size: x-large;
+  font-weight: bold;
+  color: #000;
+  margin-left: 5%;
+  padding: 2%;
+}
+
+.heading-3 {
+  font-size: 350%;
+  font-weight: 700;
+  color: #000;
+  margin-left: 7%;
+}
+
+.heading-4 {
+  font-size: medium;
+  font-weight: 700;
+  color: rgb(126, 125, 125);
+  margin-left: 7%;
+}
+
+.home-button {
+  margin-left: 7%;
+}
+
+.form {
+  margin-left: 5%;
+  padding: 2%;
+}
+
+.authentication .input-label {
+  font-size: large;
+  color: #000;
+}
+
+.error-msg {
+  margin-bottom: 10px;
+  color: #d8000c;
+  background-color: #ffd2d2;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+.success-msg {
+  margin-bottom: 10px;
+  color: #4f8a10;
+  background-color: #dff2bf;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+.center {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+  color: #fff;
+}
+
+.authentication .btn-secondary {
+  color: #fff !important ;
+  background-color: #000 !important;
+  font-weight: bold !important;
+  margin: 0 auto !important;
+  padding: 2% 7% !important;
+  font-size: large !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.authentication .btn-secondary:hover {
+  color: #fff !important ;
+  background-color: rgb(126, 125, 125) !important;
+}
+
+.link {
+  color: #000 !important ;
+}
+
+.link:hover {
+  color: rgb(126, 125, 125) !important ;
+}
+
+.profile-image {
+  display: block;
+  margin: auto;
+}
+
+.profile-right-row {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-left-row {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-right-col {
+  width: 100%;
+}
+
+.profile-left-col {
+  width: 100%;
+}
+
+.radio-img {
+  justify-content: start;
+  align-items: center;
+}
+
+.authentication .btn-outline-primary {
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.authentication .btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: rgb(126, 125, 125) !important;
+}
+
+.authentication .btn-check:focus + .btn-outline-primary,
+.authentication .btn-outline-primary:focus {
+  box-shadow: 0 0 0 0rem rgb(126 125 125 / 50%) !important;
+}
+
+.authentication .btn-check:checked + .btn-outline-primary {
+  color: #fff !important;
+  background-color: rgb(126, 125, 125) !important;
+  border-color: rgb(126, 125, 125) !important;
+}
+
+@media screen and (max-width: 800px) {
+  .column-right {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .profile-right-row {
+    width: 100% !important;
+    height: unset !important;
+  }
+
+  .profile-left-row {
+    width: 100% !important;
+    height: unset !important;
+  }
+
+  .profile-row {
+    display: block !important;
+  }
+
+  .profile-left-col {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profile-right-col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column-right {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .column-left {
+    flex: 100%;
+    max-width: 100%;
+    height: unset;
+  }
+
+  .column-left img {
+    height: unset;
+  }
+
+  .profile-right-row {
+    width: 100% !important;
+    height: unset !important;
+  }
+
+  .profile-left-row {
+    width: 100% !important;
+    height: unset !important;
+  }
+
+  .profile-row {
+    display: block !important;
+  }
+
+  .profile-left-col {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profile-right-col {
+    width: 100%;
+  }
+}

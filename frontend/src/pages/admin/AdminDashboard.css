@@ -1,0 +1,44 @@
+.tab-admin-link:focus,
+.tab-admin-link:hover {
+  background-color: #77737563 !important;
+}
+
+.tab-admin-link-selected {
+  background-color: #77737563 !important;
+}
+
+.tab-admin-link {
+  color: #000 !important;
+}
+
+.reject {
+  margin-left: 15px;
+}
+
+.reject:hover {
+  background-color: rgba(255, 0, 0, 0.214);
+  cursor: pointer;
+}
+
+.approve:hover {
+  background-color: #7773758a;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.error-msg {
+  margin-bottom: 10px;
+  color: #d8000c;
+  background-color: #ffd2d2;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+.success-msg {
+  margin-bottom: 10px;
+  color: #4f8a10;
+  background-color: #dff2bf;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
